@@ -16,8 +16,8 @@ opt.clipboard = 'unnamedplus'
 vim.keymap.set('i', '<C-d>', '<Del>')
 
 local au_ft = vim.api.nvim_create_augroup("ft", { clear = true })
-vim.api.nvim_create_autocmd({"BufRead","BufNewFile"}, {
-	pattern = {"Jenkinsfile"},
-	command = 'set filetype=groovy',
-	group = au_ft
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = { "Jenkinsfile" },
+  command = 'set filetype=groovy',
+  group = au_ft
 })
